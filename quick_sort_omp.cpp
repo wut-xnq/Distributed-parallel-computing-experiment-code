@@ -88,7 +88,7 @@ void quickSort_parallel_internal(int* a, int left, int right, int cutoff) {
 int main() {
     const int n = 8000000;  // 数据量设为 8000000
     int* data = (int*)malloc(sizeof(int) * n);
-    int numThreads = 64; // 设定使用的线程数量
+    int numThreads = 8; // 设定使用的线程数量
 
     rands(data, n);
 
